@@ -1,0 +1,3071 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Store Insights for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-store-insights-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T02:54:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-store-insights-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-store-insights-for-woocommerce.php
+msgid "DEV3 AI Store Insights for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-store-insights-for-woocommerce.php
+msgid "https://dev3.tech/item/dev3-ai-store-insights-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-store-insights-for-woocommerce.php
+msgid "Ask your WooCommerce store questions in plain English and get charts, AI explanations, pinned dashboards, email digests and anomaly alerts."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-store-insights-for-woocommerce.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-store-insights-for-woocommerce.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:40
+msgid "DEV3 AI Insights"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:69
+msgid "Open Insights"
+msgstr ""
+
+#: includes/Admin/Dashboard_Widget.php:37
+msgid "DEV3 AI Store Insights"
+msgstr ""
+
+#: includes/Admin/Dashboard_Widget.php:59
+#: includes/Admin/Dashboard_Widget.php:100
+msgid "Net sales, last 14 days"
+msgstr ""
+
+#. translators: %s: signed percent change
+#: includes/Admin/Dashboard_Widget.php:93
+#, php-format
+msgid "%s vs yesterday"
+msgstr ""
+
+#: includes/Admin/Dashboard_Widget.php:111
+#: build/admin.js:8
+msgid "Ask your store"
+msgstr ""
+
+#: includes/Ask/Asker.php:57
+msgid "DEV3 AI could not map that question to a report."
+msgstr ""
+
+#: includes/Ask/Asker.php:57
+msgid "Rephrase it, or use Explore to build the report."
+msgstr ""
+
+#: includes/Ask/Asker.php:92
+msgid "Type a question about your store."
+msgstr ""
+
+#: includes/Ask/Asker.php:116
+msgid "DEV3 AI is not connected, so the question was answered with the built-in rules."
+msgstr ""
+
+#: includes/Ask/Asker.php:117
+msgid "Add a Google Gemini API key in API Config for better understanding of free-form questions."
+msgstr ""
+
+#. translators: %d: rank
+#: includes/Ask/Explainer.php:43
+#, php-format
+msgid "Customer %d"
+msgstr ""
+
+#: includes/Ask/Explainer.php:142
+msgid "No data to explain."
+msgstr ""
+
+#. translators: %s: period
+#: includes/Ask/Explainer.php:157
+#, php-format
+msgid "No matching data for %s."
+msgstr ""
+
+#: includes/Ask/Explainer.php:158
+#: build/admin.js:2
+msgid "Try a longer period or remove a filter."
+msgstr ""
+
+#. translators: 1: item, 2: value, 3: period
+#: includes/Ask/Explainer.php:164
+#, php-format
+msgid "%1$s leads with %2$s (%3$s)."
+msgstr ""
+
+#. translators: %s: percent
+#: includes/Ask/Explainer.php:167
+#, php-format
+msgid "That is %s of the total."
+msgstr ""
+
+#. translators: %s: list of names
+#: includes/Ask/Explainer.php:172
+#, php-format
+msgid "Next: %s."
+msgstr ""
+
+#. translators: %s: percent
+#: includes/Ask/Explainer.php:179
+#, php-format
+msgid "On average %s of new customers ordered again in their second month."
+msgstr ""
+
+#: includes/Ask/Explainer.php:180
+msgid "Each row is the month of a customer's first order; columns show the share who ordered again in later months."
+msgstr ""
+
+#. translators: 1: metric, 2: value, 3: period
+#: includes/Ask/Explainer.php:184
+#, php-format
+msgid "%1$s: %2$s (%3$s)."
+msgstr ""
+
+#. translators: 1: up/down, 2: percent, 3: comparison label, 4: previous value
+#: includes/Ask/Explainer.php:188
+#, php-format
+msgid "That is %1$s %2$s vs %3$s (%4$s)."
+msgstr ""
+
+#: includes/Ask/Explainer.php:189
+msgid "up"
+msgstr ""
+
+#: includes/Ask/Explainer.php:189
+msgid "down"
+msgstr ""
+
+#. translators: 1: bucket label, 2: value
+#: includes/Ask/Explainer.php:203
+#, php-format
+msgid "Best: %1$s with %2$s"
+msgstr ""
+
+#: includes/Ask/Explainer.php:228
+msgid "Best sellers this month"
+msgstr ""
+
+#: includes/Ask/Explainer.php:228
+#: includes/Rest/Rest_Controller.php:120
+msgid "Net sales by week for the last 90 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:228
+msgid "Sales by country last month"
+msgstr ""
+
+#: includes/Ask/Explainer.php:229
+msgid "Top products last 30 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:229
+#: includes/Ask/Explainer.php:238
+#: includes/Rest/Rest_Controller.php:122
+msgid "New vs returning customers last 30 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:229
+msgid "Average order value by month this year"
+msgstr ""
+
+#: includes/Ask/Explainer.php:230
+msgid "Top categories last month"
+msgstr ""
+
+#: includes/Ask/Explainer.php:230
+#: includes/Ask/Explainer.php:237
+#: includes/Insights/Alerts.php:715
+#: includes/Rest/Rest_Controller.php:123
+msgid "Which products will run out of stock first?"
+msgstr ""
+
+#: includes/Ask/Explainer.php:230
+#: includes/Ask/Explainer.php:235
+msgid "Most refunded products last 90 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:231
+#: includes/Rest/Rest_Controller.php:118
+msgid "Best sellers last month"
+msgstr ""
+
+#: includes/Ask/Explainer.php:231
+msgid "Sales by city last month"
+msgstr ""
+
+#: includes/Ask/Explainer.php:232
+msgid "Sales by city last 90 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:232
+msgid "Top customers last 90 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:233
+#: includes/Ask/Explainer.php:234
+#: includes/Rest/Rest_Controller.php:124
+msgid "Customer retention cohorts"
+msgstr ""
+
+#: includes/Ask/Explainer.php:233
+#: includes/Ask/Explainer.php:236
+msgid "Top customers this year"
+msgstr ""
+
+#: includes/Ask/Explainer.php:234
+msgid "New vs returning customers this year"
+msgstr ""
+
+#: includes/Ask/Explainer.php:235
+#: includes/Ask/Explainer.php:238
+msgid "Store summary last 30 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:236
+msgid "New vs returning customers last 90 days"
+msgstr ""
+
+#: includes/Ask/Explainer.php:237
+msgid "Best sellers last 30 days"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: includes/Data/Questions.php:357
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Health.php:76
+msgid "This WooCommerce version cannot import orders into Analytics."
+msgstr ""
+
+#: includes/Data/Health.php:76
+msgid "Update WooCommerce, or use WooCommerce > Settings > Advanced > Analytics > Import historical data."
+msgstr ""
+
+#: includes/Data/Health.php:84
+msgid "Every order is already in WooCommerce Analytics."
+msgstr ""
+
+#: includes/Data/Questions.php:349
+msgid "Store Insights questions"
+msgstr ""
+
+#: includes/Data/Questions.php:353
+#: build/admin.js:10
+msgid "Question"
+msgstr ""
+
+#: includes/Insights/Alerts.php:54
+msgid "Net sales dropped"
+msgstr ""
+
+#: includes/Insights/Alerts.php:64
+msgid "Unusual number of orders"
+msgstr ""
+
+#: includes/Insights/Alerts.php:74
+msgid "Refunds spiked"
+msgstr ""
+
+#: includes/Insights/Alerts.php:84
+#: includes/Insights/Alerts.php:113
+msgid "Best sellers about to run out"
+msgstr ""
+
+#: includes/Insights/Alerts.php:348
+#: includes/Query/Functions.php:505
+msgid "Unknown"
+msgstr ""
+
+#: includes/Insights/Alerts.php:536
+msgid "Stock"
+msgstr ""
+
+#: includes/Insights/Alerts.php:656
+#: includes/Rest/Rest_Controller.php:397
+msgid "Alert not found."
+msgstr ""
+
+#. translators: %d: number of products
+#: includes/Insights/Alerts.php:712
+#, php-format
+msgid "%d best seller may run out soon."
+msgid_plural "%d best sellers may run out soon."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Insights/Alerts.php:713
+msgid "At the last 30 days' sales rate these products have less than the configured days of stock left. Reorder or adjust their promotion."
+msgstr ""
+
+#: includes/Insights/Alerts.php:719
+msgid "above"
+msgstr ""
+
+#: includes/Insights/Alerts.php:719
+msgid "below"
+msgstr ""
+
+#. translators: 1: name, 2: day value, 3: usual value
+#: includes/Insights/Alerts.php:724
+#, php-format
+msgid "%1$s: %2$s (usually %3$s a day)"
+msgstr ""
+
+#. translators: 1: metric, 2: value, 3: day
+#: includes/Insights/Alerts.php:729
+#, php-format
+msgid "%1$s was %2$s on %3$s."
+msgstr ""
+
+#. translators: 1: percent, 2: above/below, 3: baseline
+#: includes/Insights/Alerts.php:731
+#, php-format
+msgid "That is %1$s %2$s the 28-day daily average of %3$s. The products and countries below moved the most."
+msgstr ""
+
+#: includes/Insights/Alerts.php:733
+msgid "Net sales by day for the last 30 days"
+msgstr ""
+
+#: includes/Insights/Alerts.php:733
+msgid "Best sellers last 7 days"
+msgstr ""
+
+#: includes/Insights/Digests.php:99
+msgid "Daily store digest"
+msgstr ""
+
+#: includes/Insights/Digests.php:100
+#: build/admin.js:10
+msgid "Weekly store digest"
+msgstr ""
+
+#: includes/Insights/Digests.php:101
+msgid "Monthly store digest"
+msgstr ""
+
+#: includes/Insights/Digests.php:198
+#: build/admin.js:9
+#: build/admin.js:10
+msgid "Key numbers"
+msgstr ""
+
+#: includes/Insights/Digests.php:273
+msgid "Nothing to report for this period."
+msgstr ""
+
+#. translators: 1: digest name, 2: date range
+#: includes/Insights/Digests.php:277
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: includes/Insights/Digests.php:316
+msgid "Add at least one recipient."
+msgstr ""
+
+#: includes/Insights/Digests.php:321
+msgid "WordPress could not send the e-mail."
+msgstr ""
+
+#: includes/Insights/Digests.php:321
+msgid "Check your site's mail setup (an SMTP plugin helps)."
+msgstr ""
+
+#: includes/Insights/Mailer.php:84
+msgid "No data for this period."
+msgstr ""
+
+#: includes/Insights/Mailer.php:127
+msgid "Cohort"
+msgstr ""
+
+#: includes/Insights/Mailer.php:238
+msgid "Open Store Insights"
+msgstr ""
+
+#: includes/Insights/Mailer.php:240
+msgid "Sent by DEV3 AI Store Insights for WooCommerce. Change or stop these e-mails in Store Insights."
+msgstr ""
+
+#: includes/Insights/Mailer.php:341
+msgid "Last 29 days"
+msgstr ""
+
+#. translators: 1: rule name, 2: day
+#: includes/Insights/Mailer.php:356
+#, php-format
+msgid "Store alert: %1$s (%2$s)"
+msgstr ""
+
+#: includes/Plugin.php:133
+#: includes/Plugin.php:134
+msgid "DEV3 AI Store Insights questions"
+msgstr ""
+
+#: includes/Plugin.php:165
+msgid "DEV3 AI Store Insights for WooCommerce needs WooCommerce 8.0 or later to be active."
+msgstr ""
+
+#: includes/Query/Builder.php:207
+msgid "New customers only"
+msgstr ""
+
+#: includes/Query/Builder.php:207
+msgid "Returning customers only"
+msgstr ""
+
+#: includes/Query/Builder.php:212
+msgid "Registered customers only"
+msgstr ""
+
+#: includes/Query/Builder.php:212
+msgid "Guest checkouts only"
+msgstr ""
+
+#. translators: %s: location
+#: includes/Query/Builder.php:235
+#, php-format
+msgid "Location: %s"
+msgstr ""
+
+#. translators: %s: product
+#: includes/Query/Builder.php:244
+#, php-format
+msgid "Product: %s"
+msgstr ""
+
+#. translators: %s: category
+#: includes/Query/Builder.php:250
+#: includes/Query/Functions.php:989
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: includes/Query/Functions.php:136
+msgid "Store summary"
+msgstr ""
+
+#: includes/Query/Functions.php:145
+#: build/admin.js:8
+msgid "Metric"
+msgstr ""
+
+#: includes/Query/Functions.php:146
+#: build/admin.js:8
+msgid "Value"
+msgstr ""
+
+#: includes/Query/Functions.php:147
+msgid "Previous"
+msgstr ""
+
+#: includes/Query/Functions.php:148
+msgid "Change"
+msgstr ""
+
+#. translators: 1: metric, 2: interval
+#: includes/Query/Functions.php:256
+#, php-format
+msgid "%1$s by %2$s"
+msgstr ""
+
+#: includes/Query/Functions.php:321
+msgid "Share"
+msgstr ""
+
+#: includes/Query/Functions.php:395
+#: includes/Query/Library.php:171
+msgid "Top products"
+msgstr ""
+
+#: includes/Query/Functions.php:397
+#: includes/Query/Functions.php:768
+#: includes/Query/Functions.php:1070
+msgid "Product"
+msgstr ""
+
+#: includes/Query/Functions.php:398
+#: includes/Query/Functions.php:457
+#: includes/Query/Functions.php:557
+#: includes/Query/Functions.php:631
+#: includes/Query/Functions.php:713
+#: includes/Query/Library.php:47
+#: includes/Query/Library.php:57
+#: build/admin.js:3
+msgid "Net sales"
+msgstr ""
+
+#: includes/Query/Functions.php:399
+#: includes/Query/Functions.php:458
+#: includes/Query/Library.php:50
+#: includes/Query/Library.php:58
+#: build/admin.js:3
+msgid "Items sold"
+msgstr ""
+
+#: includes/Query/Functions.php:400
+#: includes/Query/Functions.php:459
+#: includes/Query/Functions.php:558
+#: includes/Query/Functions.php:632
+#: includes/Query/Functions.php:714
+#: includes/Query/Functions.php:771
+#: includes/Query/Functions.php:1131
+#: includes/Query/Library.php:49
+#: build/admin.js:3
+msgid "Orders"
+msgstr ""
+
+#: includes/Query/Functions.php:449
+msgid "A product in several categories counts in each of them."
+msgstr ""
+
+#: includes/Query/Functions.php:454
+#: includes/Query/Library.php:178
+msgid "Top categories"
+msgstr ""
+
+#: includes/Query/Functions.php:456
+#: build/admin.js:10
+msgid "Category"
+msgstr ""
+
+#: includes/Query/Functions.php:511
+msgid "Unknown city"
+msgstr ""
+
+#: includes/Query/Functions.php:543
+msgid "Sales by country"
+msgstr ""
+
+#: includes/Query/Functions.php:544
+msgid "Sales by region"
+msgstr ""
+
+#: includes/Query/Functions.php:545
+msgid "Sales by city"
+msgstr ""
+
+#. translators: %s: billing or shipping
+#: includes/Query/Functions.php:549
+#, php-format
+msgid "Grouped by the %s address of each order."
+msgstr ""
+
+#. translators: %s: billing or shipping
+#: includes/Query/Functions.php:549
+msgid "shipping"
+msgstr ""
+
+#. translators: %s: billing or shipping
+#: includes/Query/Functions.php:549
+msgid "billing"
+msgstr ""
+
+#: includes/Query/Functions.php:559
+#: includes/Query/Functions.php:633
+#: includes/Query/Functions.php:715
+msgid "AOV"
+msgstr ""
+
+#: includes/Query/Functions.php:560
+#: includes/Query/Functions.php:634
+#: includes/Query/Functions.php:891
+#: includes/Query/Library.php:55
+#: build/admin.js:10
+msgid "Customers"
+msgstr ""
+
+#: includes/Query/Functions.php:582
+#: includes/Query/Library.php:521
+msgid "Registered"
+msgstr ""
+
+#: includes/Query/Functions.php:583
+#: includes/Query/Library.php:522
+msgid "Guest"
+msgstr ""
+
+#: includes/Query/Functions.php:588
+#: includes/Query/Library.php:56
+msgid "New customers"
+msgstr ""
+
+#: includes/Query/Functions.php:589
+msgid "Returning customers"
+msgstr ""
+
+#: includes/Query/Functions.php:628
+msgid "Registered vs guest customers"
+msgstr ""
+
+#: includes/Query/Functions.php:628
+msgid "New vs returning customers"
+msgstr ""
+
+#: includes/Query/Functions.php:630
+msgid "Segment"
+msgstr ""
+
+#. translators: %d: customer id
+#: includes/Query/Functions.php:683
+#, php-format
+msgid "Guest customer #%d"
+msgstr ""
+
+#: includes/Query/Functions.php:709
+#: includes/Query/Library.php:215
+msgid "Top customers"
+msgstr ""
+
+#: includes/Query/Functions.php:711
+msgid "Customer"
+msgstr ""
+
+#: includes/Query/Functions.php:712
+#: includes/Query/Library.php:523
+msgid "Country"
+msgstr ""
+
+#: includes/Query/Functions.php:760
+msgid "No refunded line items in this period. Refunds entered as an amount only (without items) appear in the refunds trend instead."
+msgstr ""
+
+#: includes/Query/Functions.php:766
+msgid "Most refunded products"
+msgstr ""
+
+#: includes/Query/Functions.php:769
+msgid "Refunded"
+msgstr ""
+
+#: includes/Query/Functions.php:770
+msgid "Items refunded"
+msgstr ""
+
+#: includes/Query/Functions.php:782
+msgid "Refunds over time"
+msgstr ""
+
+#. translators: %d: number of months
+#: includes/Query/Functions.php:831
+#, php-format
+msgid "Last %d month"
+msgid_plural "Last %d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Query/Functions.php:890
+msgid "First order"
+msgstr ""
+
+#. translators: %d: months after the first order
+#: includes/Query/Functions.php:896
+msgid "Month 0"
+msgstr ""
+
+#. translators: %d: months after the first order
+#: includes/Query/Functions.php:896
+#, php-format
+msgid "+%d mo"
+msgstr ""
+
+#: includes/Query/Functions.php:923
+msgid "Customer retention by cohort"
+msgstr ""
+
+#: includes/Query/Functions.php:923
+msgid "Revenue by cohort"
+msgstr ""
+
+#: includes/Query/Functions.php:935
+msgid "Average month-1 retention"
+msgstr ""
+
+#: includes/Query/Functions.php:939
+msgid "Guest checkouts count as customers too. Month 0 is the month of the first order."
+msgstr ""
+
+#: includes/Query/Functions.php:1044
+#: includes/Query/Library.php:530
+msgid "Low stock"
+msgstr ""
+
+#: includes/Query/Functions.php:1045
+#: includes/Query/Library.php:531
+msgid "Out of stock"
+msgstr ""
+
+#: includes/Query/Functions.php:1046
+#: build/admin.js:8
+msgid "Days of stock left"
+msgstr ""
+
+#: includes/Query/Functions.php:1047
+msgid "Overstocked, slow-moving products"
+msgstr ""
+
+#. translators: %d: threshold
+#: includes/Query/Functions.php:1051
+#, php-format
+msgid "Low means %d or fewer in stock (WooCommerce low stock threshold)."
+msgstr ""
+
+#: includes/Query/Functions.php:1053
+msgid "Sales rate uses the last 30 days."
+msgstr ""
+
+#: includes/Query/Functions.php:1060
+msgid "Right now"
+msgstr ""
+
+#: includes/Query/Functions.php:1071
+msgid "SKU"
+msgstr ""
+
+#: includes/Query/Functions.php:1072
+#: build/admin.js:8
+msgid "In stock"
+msgstr ""
+
+#: includes/Query/Functions.php:1073
+msgid "Sold (30 days)"
+msgstr ""
+
+#: includes/Query/Functions.php:1074
+#: build/admin.js:8
+msgid "Days left"
+msgstr ""
+
+#: includes/Query/Functions.php:1079
+msgid "Products"
+msgstr ""
+
+#. translators: %d: coupon id
+#: includes/Query/Functions.php:1118
+#, php-format
+msgid "Coupon #%d"
+msgstr ""
+
+#: includes/Query/Functions.php:1128
+#: includes/Query/Library.php:266
+msgid "Top coupons"
+msgstr ""
+
+#: includes/Query/Functions.php:1130
+msgid "Coupon"
+msgstr ""
+
+#: includes/Query/Functions.php:1132
+msgid "Discount"
+msgstr ""
+
+#: includes/Query/Functions.php:1133
+msgid "Net sales of those orders"
+msgstr ""
+
+#: includes/Query/Library.php:48
+msgid "Gross sales"
+msgstr ""
+
+#: includes/Query/Library.php:51
+#: build/admin.js:3
+msgid "Average order value"
+msgstr ""
+
+#: includes/Query/Library.php:52
+#: includes/Query/Library.php:222
+#: build/admin.js:3
+msgid "Refunds"
+msgstr ""
+
+#: includes/Query/Library.php:53
+msgid "Refunded orders"
+msgstr ""
+
+#: includes/Query/Library.php:54
+#: build/admin.js:3
+msgid "Refund rate"
+msgstr ""
+
+#: includes/Query/Library.php:59
+msgid "Discount given"
+msgstr ""
+
+#: includes/Query/Library.php:60
+msgid "Retention"
+msgstr ""
+
+#: includes/Query/Library.php:158
+msgid "Store summary (KPIs)"
+msgstr ""
+
+#: includes/Query/Library.php:164
+msgid "Sales trend over time"
+msgstr ""
+
+#: includes/Query/Library.php:185
+msgid "Sales by location"
+msgstr ""
+
+#: includes/Query/Library.php:200
+msgid "Customer segments"
+msgstr ""
+
+#: includes/Query/Library.php:236
+msgid "Customer cohorts"
+msgstr ""
+
+#: includes/Query/Library.php:252
+msgid "Stock status"
+msgstr ""
+
+#: includes/Query/Library.php:356
+msgid "That question maps to a report this plugin does not have."
+msgstr ""
+
+#: includes/Query/Library.php:356
+msgid "Rephrase the question or use Explore."
+msgstr ""
+
+#: includes/Query/Library.php:412
+msgid "WooCommerce Analytics tables were not found."
+msgstr ""
+
+#: includes/Query/Library.php:412
+msgid "Activate WooCommerce 8+ and let it finish its Analytics import."
+msgstr ""
+
+#: includes/Query/Library.php:509
+#: includes/Query/Period.php:227
+#: includes/Query/Period.php:230
+msgid "Previous period"
+msgstr ""
+
+#: includes/Query/Library.php:510
+#: includes/Query/Period.php:210
+msgid "Same period last year"
+msgstr ""
+
+#: includes/Query/Library.php:511
+msgid "No comparison"
+msgstr ""
+
+#: includes/Query/Library.php:512
+msgid "Automatic"
+msgstr ""
+
+#: includes/Query/Library.php:513
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Day"
+msgstr ""
+
+#: includes/Query/Library.php:514
+msgid "Week"
+msgstr ""
+
+#: includes/Query/Library.php:515
+msgid "Month"
+msgstr ""
+
+#: includes/Query/Library.php:516
+msgid "Quarter"
+msgstr ""
+
+#: includes/Query/Library.php:517
+msgid "Year"
+msgstr ""
+
+#: includes/Query/Library.php:518
+#: build/admin.js:10
+msgid "Any"
+msgstr ""
+
+#: includes/Query/Library.php:519
+#: build/admin.js:8
+msgid "New"
+msgstr ""
+
+#: includes/Query/Library.php:520
+msgid "Returning"
+msgstr ""
+
+#: includes/Query/Library.php:524
+msgid "Region / state"
+msgstr ""
+
+#: includes/Query/Library.php:525
+msgid "City"
+msgstr ""
+
+#: includes/Query/Library.php:526
+msgid "New vs returning"
+msgstr ""
+
+#: includes/Query/Library.php:527
+msgid "Registered vs guest"
+msgstr ""
+
+#: includes/Query/Library.php:528
+msgid "Trend"
+msgstr ""
+
+#: includes/Query/Library.php:529
+msgid "By product"
+msgstr ""
+
+#: includes/Query/Library.php:532
+msgid "Days of cover"
+msgstr ""
+
+#: includes/Query/Library.php:533
+msgid "Overstock"
+msgstr ""
+
+#: includes/Query/Period.php:45
+msgid "Today"
+msgstr ""
+
+#: includes/Query/Period.php:46
+#: build/admin.js:8
+msgid "Yesterday"
+msgstr ""
+
+#: includes/Query/Period.php:47
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: includes/Query/Period.php:48
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: includes/Query/Period.php:49
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: includes/Query/Period.php:50
+msgid "This week"
+msgstr ""
+
+#: includes/Query/Period.php:51
+msgid "Last week"
+msgstr ""
+
+#: includes/Query/Period.php:52
+msgid "This month"
+msgstr ""
+
+#: includes/Query/Period.php:53
+msgid "Last month"
+msgstr ""
+
+#: includes/Query/Period.php:54
+msgid "This quarter"
+msgstr ""
+
+#: includes/Query/Period.php:55
+msgid "Last quarter"
+msgstr ""
+
+#: includes/Query/Period.php:56
+msgid "This year"
+msgstr ""
+
+#: includes/Query/Period.php:57
+msgid "Last year"
+msgstr ""
+
+#: includes/Query/Period.php:58
+msgid "Last 12 months"
+msgstr ""
+
+#: includes/Query/Period.php:59
+msgid "All time"
+msgstr ""
+
+#: includes/Query/Period.php:60
+msgid "Custom range"
+msgstr ""
+
+#. translators: %d: product id
+#: includes/Query/Store.php:393
+#, php-format
+msgid "Product #%d (deleted)"
+msgstr ""
+
+#. translators: %s: number of days
+#: includes/Query/Store.php:479
+#: build/admin.js:2
+#, php-format,js-format
+msgid "%s days"
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:119
+msgid "How did the store do this month?"
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:121
+msgid "Top 5 cities by revenue this year"
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:125
+msgid "Refunds over the last 90 days"
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:235
+msgid "Question not found."
+msgstr ""
+
+#: includes/Rest/Rest_Controller.php:335
+msgid "Digest not found."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background job"
+msgstr ""
+
+#. translators: 1: processed, 2: total, 3: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$s of %2$s processed (%3$s%%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starting…"
+msgstr ""
+
+#. translators: %s: failed count
+#: build/admin.js:1
+#, js-format
+msgid "%s failed"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resume"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Retry failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show failed items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3SI_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3SI_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:10
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:8
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:7
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Use the left and right arrow keys to read each value."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Not yet"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No comparison data"
+msgstr ""
+
+#. translators: %s: comparison period
+#: build/admin.js:2
+#, js-format
+msgid "vs %s"
+msgstr ""
+
+#: build/admin.js:2
+msgid "(better)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "(worse)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Net sales trend in this period"
+msgstr ""
+
+#: build/admin.js:2
+msgid "High"
+msgstr ""
+
+#: build/admin.js:2
+#: build/admin.js:3
+msgid "Medium"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Low"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No rows"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Nothing matched this period and filters."
+msgstr ""
+
+#: build/admin.js:2
+msgid "No data for this period"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI read this as"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Understood as"
+msgstr ""
+
+#: build/admin.js:2
+#: build/admin.js:10
+msgid "Report"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI explanation"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Summary"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Explain with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Ask next"
+msgstr ""
+
+#: build/admin.js:2
+#: build/admin.js:10
+msgid "View"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Chart"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Table"
+msgstr ""
+
+#: build/admin.js:2
+msgid "CSV"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Edit query"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Save or pin"
+msgstr ""
+
+#. translators: 1: metric, 2: total
+#: build/admin.js:3
+#, js-format
+msgid "Total %1$s: %2$s"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Drops"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Spikes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Drops and spikes"
+msgstr ""
+
+#: build/admin.js:3
+msgid "Low (only big surprises)"
+msgstr ""
+
+#: build/admin.js:3
+msgid "High (more alerts)"
+msgstr ""
+
+#. translators: %d: days
+#: build/admin.js:5
+#, js-format
+msgid "A top-10 seller has less than %d days of stock left"
+msgstr ""
+
+#. translators: 1: direction, 2: metric, 3: percent
+#: build/admin.js:7
+#, js-format
+msgid "%1$s in daily %2$s of at least %3$s%% vs the 28-day average"
+msgstr ""
+
+#: build/admin.js:7
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Name"
+msgstr ""
+
+#: build/admin.js:7
+msgid "That day"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Usual per day"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Mark as new"
+msgstr ""
+
+#: build/admin.js:7
+msgid "Acknowledge"
+msgstr ""
+
+#. translators: 1: value, 2: baseline, 3: change
+#: build/admin.js:8
+#, js-format
+msgid "%1$s vs usual %2$s (%3$s)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Products that moved most"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No product stood out."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Countries that moved most"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No country stood out."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Bar length = gap between that day and the usual daily net sales."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Explain this alert"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Edit alert rule"
+msgstr ""
+
+#: build/admin.js:8
+msgid "New alert rule"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Save rule"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Alert when a top-10 seller has fewer days of stock than"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Watch for"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Sensitivity"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Minimum change (%)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Stay quiet below a daily average of"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Only this location (optional)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Only this category (optional)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "E-mail me when it triggers"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Recipients (optional)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Leave empty to use the alert recipients from Settings (or the site admin e-mail)."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Rule is active"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Alert"
+msgstr ""
+
+#. translators: %d: products
+#: build/admin.js:8
+#, js-format
+msgid "%d products"
+msgstr ""
+
+#: build/admin.js:8
+msgid "vs usual"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Severity"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Anomaly alerts"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Every morning each rule compares yesterday with the 28 days before it and flags real surprises."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Alert views"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Acknowledged"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Rules"
+msgstr ""
+
+#: build/admin.js:8
+msgid "No new alerts"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Nothing acknowledged yet"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Alerts appear here when a day looks unusual. Use “Check now” on the Rules tab to scan past days."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Alerts are turned off in Settings. Rules are kept but not checked."
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:8
+#, js-format
+msgid "Last checked through %s."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Not checked yet."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Add rule"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Rule"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Triggers on"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Active"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Paused"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Rule deleted."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Check now"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Scan recent days with the current rules (each rule raises at most one alert per day)."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Days to scan"
+msgstr ""
+
+#. translators: %s: days
+#: build/admin.js:8
+#, js-format
+msgid "Last %s days"
+msgstr ""
+
+#. translators: %d: alerts
+#: build/admin.js:8
+#, js-format
+msgid "%d new alerts found."
+msgstr ""
+
+#: build/admin.js:8
+msgid "All clear: nothing unusual found."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Suggest rules with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "DEV3 AI looks at 90 days of daily totals and proposes thresholds that fit your store. Nothing changes until you accept."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Add a Google Gemini API key in API Config to use this."
+msgstr ""
+
+#: build/admin.js:8
+msgid "DEV3 AI · Suggested alert rules"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Add these rules"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Suggested rules added."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Rule saved."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Saved and pinned to the dashboard."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Question saved."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Save question"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Saved questions re-run on fresh data every time you open them."
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Title"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Pin to the dashboard"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Card width"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Half width"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Full width"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Ask in plain English. DEV3 AI picks a safe, ready-made report and fills in the details; it never writes database queries."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Your question"
+msgstr ""
+
+#: build/admin.js:8
+msgid "e.g. Best sellers in Dubai last month"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Thinking…"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Ask DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Ask"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Answer with"
+msgstr ""
+
+#: build/admin.js:8
+msgid "DEV3 AI (free-form questions)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Built-in rules (no AI)"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Press Enter to ask, Shift+Enter for a new line."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Suggested questions"
+msgstr ""
+
+#: build/admin.js:8
+msgid "DEV3 AI is not connected"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:9
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Questions are answered with the built-in rules until you add a Google Gemini API key."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Answered with the built-in rules instead."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Best guess"
+msgstr ""
+
+#: build/admin.js:8
+msgid "The built-in rules were not sure what you meant. Check the interpretation below, use Edit query, or connect DEV3 AI."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Recent questions"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Move down"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Move up"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Make half width"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Make full width"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Open in Explore"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Unpin"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Each card’s saved period"
+msgstr ""
+
+#: build/admin.js:8
+#: build/admin.js:10
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Your key numbers and pinned insights, always on fresh data."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Date range"
+msgstr ""
+
+#: build/admin.js:8
+msgid "WooCommerce is not active"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Activate WooCommerce 8.0 or later to see store insights."
+msgstr ""
+
+#: build/admin.js:8
+msgid "Some orders are not in WooCommerce Analytics yet"
+msgstr ""
+
+#: build/admin.js:8
+msgid "Import them now"
+msgstr ""
+
+#. translators: %d: number of orders
+#: build/admin.js:9
+#, js-format
+msgid "%d orders are missing from the Analytics tables, so the numbers may be low. Importing runs in the background."
+msgstr ""
+
+#: build/admin.js:9
+#: build/admin.js:10
+msgid "Importing orders into Analytics"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Import finished."
+msgstr ""
+
+#: build/admin.js:9
+msgid "Add API key"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Everything works without AI. With your Google Gemini key, DEV3 AI understands free-form questions and explains every answer."
+msgstr ""
+
+#: build/admin.js:9
+msgid "No pinned insights yet"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Ask a question or build a report, then choose “Save or pin” to keep it here."
+msgstr ""
+
+#: build/admin.js:9
+#: build/admin.js:10
+msgid "Ask a question"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Open Explore"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Unpinned. It stays in Saved questions."
+msgstr ""
+
+#: build/admin.js:9
+msgid "Sunday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Monday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Tuesday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Wednesday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Thursday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Friday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Saturday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Daily"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Weekly"
+msgstr ""
+
+#: build/admin.js:9
+msgid "Monthly"
+msgstr ""
+
+#: build/admin.js:9
+msgid "yesterday"
+msgstr ""
+
+#: build/admin.js:9
+msgid "last week"
+msgstr ""
+
+#: build/admin.js:9
+msgid "last month"
+msgstr ""
+
+#: build/admin.js:9
+#, js-format
+msgid "Every %1$s at %2$s"
+msgstr ""
+
+#: build/admin.js:9
+#, js-format
+msgid "Monthly on day %1$d at %2$s"
+msgstr ""
+
+#: build/admin.js:9
+#, js-format
+msgid "Every day at %s"
+msgstr ""
+
+#: build/admin.js:10
+msgid "E-mail digests"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Send your key numbers and saved questions by e-mail every day, week or month."
+msgstr ""
+
+#: build/admin.js:10
+msgid "New digest"
+msgstr ""
+
+#: build/admin.js:10
+msgid "No digests yet"
+msgstr ""
+
+#: build/admin.js:10
+msgid "A weekly digest with your KPIs and best sellers is a good start."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Create a digest"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Preview"
+msgstr ""
+
+#. translators: %s: email
+#: build/admin.js:10
+#, js-format
+msgid "Test digest sent to %s."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Send test"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Covers"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Recipients"
+msgstr ""
+
+#: build/admin.js:10
+msgid "None yet"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Contents"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:10
+#, js-format
+msgid "%d saved questions"
+msgstr ""
+
+#: build/admin.js:10
+msgid "DEV3 AI summary"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Next send"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Edit digest"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Digest saved."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Save digest"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Frequency"
+msgstr ""
+
+#. translators: %s: period
+#: build/admin.js:10
+#, js-format
+msgid "Reports on %s."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Day of month"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Send at (site time)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Comma-separated e-mail addresses."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Include key numbers (net sales, orders, AOV, refunds…)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Start with a DEV3 AI summary paragraph"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Written from the numbers in the digest. Skipped if AI is unavailable."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Needs a Google Gemini API key (API Config). The digest is sent without it until then."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Saved questions to include"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Save questions from Ask or Explore to add them here."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Preview with current data (the AI summary is added when the digest is sent)."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Digest preview"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Delete this digest?"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Digest deleted."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Measure"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Interval"
+msgstr ""
+
+#: build/admin.js:10
+msgid "From"
+msgstr ""
+
+#: build/admin.js:10
+msgid "To"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Compare with"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Rows"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Location"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Product (name or SKU)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Accounts"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Group by"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Segments"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Cohort months"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Explore"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Build any report by hand: pick a report, a period and filters. Works without AI."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Report builder"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Run report"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Pinned"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Not pinned"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Made with"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Last run"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Saved questions"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Saved questions re-run on fresh data. Pin them to the dashboard or add them to e-mail digests."
+msgstr ""
+
+#: build/admin.js:10
+msgid "No saved questions"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Use “Save or pin” under any answer."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Unpin from dashboard"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Pin to dashboard"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Unpinned."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Pinned to the dashboard."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Download CSV"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Rename"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Rename question"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Renamed."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Delete this question?"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Deleted."
+msgstr ""
+
+#: build/admin.js:10
+msgid "It is also removed from the dashboard and from any digest that includes it."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Settings"
+msgstr ""
+
+#: build/admin.js:10
+msgid "How Store Insights looks, answers and alerts."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Appearance and answers"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Theme"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Applies to this screen and every chart."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Match my device"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Light"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Dark"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Default dashboard period"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Answer questions with"
+msgstr ""
+
+#: build/admin.js:10
+msgid "DEV3 AI (falls back to rules)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Built-in rules only"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Locations come from"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Billing address"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Shipping address"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Explain every answer with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Off: answers get a short summary written by the plugin (no AI tokens)."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Show the WordPress dashboard widget"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Privacy"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Send customer names to Google Gemini when explaining top-customer reports"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Off (recommended): names are replaced with “Customer 1, 2…”. E-mail addresses are never sent."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Keep question history for (days)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Saved questions are kept until you delete them."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Alerts"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Check alert rules every day"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Alert recipients"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Site admin e-mail"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Comma-separated. Rules can override this."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Data health"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Insights read WooCommerce Analytics tables, which WooCommerce fills in the background."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Order storage"
+msgstr ""
+
+#: build/admin.js:10
+msgid "High-performance order storage (HPOS)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "WordPress posts (legacy)"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Orders in Analytics"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Missing from Analytics"
+msgstr ""
+
+#. translators: %d: orders
+#: build/admin.js:10
+#, js-format
+msgid "%d orders"
+msgstr ""
+
+#: build/admin.js:10
+msgid "None"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Import missing orders"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Uninstall"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Delete saved questions, digests, alerts and settings when the plugin is deleted"
+msgstr ""
+
+#: build/admin.js:10
+msgid "WooCommerce data is never touched."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Saved"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Digests"
+msgstr ""
+
+#: build/admin.js:10
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:10
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:10
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""

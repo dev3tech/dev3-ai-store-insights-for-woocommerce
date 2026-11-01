@@ -1,0 +1,285 @@
+/*
+ * DEV3 AI Store Insights: screens, charts and the dark theme.
+ *
+ * Chart colours are tokens selected separately for each mode (dataviz reference palette, validated
+ * with validate_palette.js against #ffffff and #1a1a19). Text never wears a series colour.
+ */
+.dev3si-root {
+	--dev3si-c-1: #2a78d6;
+	--dev3si-c-2: #eb6834;
+	--dev3si-c-3: #1baf7a;
+	--dev3si-c-4: #eda100;
+	--dev3si-c-5: #e87ba4;
+	--dev3si-c-6: #008300;
+	--dev3si-c-7: #6250d6;
+	--dev3si-c-8: #e34948;
+	--dev3si-c-muted: #a8a79f;
+	--dev3si-c-grid: #eceae4;
+	--dev3si-c-axis: #c3c2b7;
+	--dev3si-c-tick: #64635e;
+	--dev3si-c-track: #f1f3f6;
+	--dev3si-c-good: #006300;
+	--dev3si-c-bad: #b42318;
+	--dev3si-h0: #f2f7fd; --dev3si-h1: #cde2fb; --dev3si-h2: #b7d3f6; --dev3si-h3: #9ec5f4; --dev3si-h4: #86b6ef;
+	--dev3si-h5: #6da7ec; --dev3si-h6: #5598e7; --dev3si-h7: #3987e5; --dev3si-h8: #256abf; --dev3si-h9: #1c5cab;
+	--dev3si-h-ink: #0b0b0b;
+	--dev3si-h-ink-strong: #ffffff;
+}
+
+/* ---------- Dark theme (Settings > Theme, or the device when "Match my device") ---------- */
+body.dev3si-theme-dark .dev3si-root {
+	color-scheme: dark;
+	--dev3si-brand: #8b93f8;
+	--dev3si-brand-hover: #a5b4fc;
+	--dev3si-brand-ink: #c7d2fe;
+	--dev3si-brand-soft: #22233f;
+	--dev3si-brand-line: #3c3f7a;
+	--dev3si-text: #f0efec;
+	--dev3si-text-muted: #c3c2b7;
+	--dev3si-text-subtle: #a8a79f;
+	--dev3si-surface: #1a1a19;
+	--dev3si-surface-2: #222221;
+	--dev3si-surface-3: #2b2b29;
+	--dev3si-border: #34342f;
+	--dev3si-border-strong: #4a4a44;
+	--dev3si-control: #8a8983;
+	--dev3si-success: #3ccf8e;
+	--dev3si-success-soft: #11291f;
+	--dev3si-warning: #fbbf24;
+	--dev3si-warning-soft: #2c2310;
+	--dev3si-danger: #f87171;
+	--dev3si-danger-soft: #311717;
+	--dev3si-info: #7cb3fb;
+	--dev3si-info-soft: #14233a;
+	--dev3si-shadow: none;
+	--dev3si-shadow-pop: 0 12px 32px rgba( 0, 0, 0, .5 );
+	--dev3si-focus: 0 0 0 2px #1a1a19, 0 0 0 4px #8b93f8;
+	--dev3si-c-1: #3987e5;
+	--dev3si-c-2: #d95926;
+	--dev3si-c-3: #199e70;
+	--dev3si-c-4: #c98500;
+	--dev3si-c-5: #d55181;
+	--dev3si-c-6: #008300;
+	--dev3si-c-7: #9085e9;
+	--dev3si-c-8: #e66767;
+	--dev3si-c-muted: #7a7973;
+	--dev3si-c-grid: #2c2c2a;
+	--dev3si-c-axis: #45453f;
+	--dev3si-c-tick: #b3b2a9;
+	--dev3si-c-track: #262624;
+	--dev3si-c-good: #3ccf8e;
+	--dev3si-c-bad: #f87171;
+	--dev3si-h0: #232b35; --dev3si-h1: #1b3a63; --dev3si-h2: #184f95; --dev3si-h3: #1c5cab; --dev3si-h4: #256abf;
+	--dev3si-h5: #2a78d6; --dev3si-h6: #3987e5; --dev3si-h7: #5598e7; --dev3si-h8: #86b6ef; --dev3si-h9: #b7d3f6;
+	--dev3si-h-ink: #f0efec;
+	--dev3si-h-ink-strong: #0b0b0b;
+}
+body.dev3si-theme-dark, body.dev3si-theme-dark #wpcontent, body.dev3si-theme-dark #wpbody-content, body.dev3si-theme-dark #wpfooter { background: #111110; color: #c3c2b7; }
+body.dev3si-theme-dark #wpfooter a { color: #a5b4fc; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-btn.is-primary,
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-btn.is-primary:hover:not( :disabled ) { color: #0d0d1a; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-badge { color: var( --dev3si-text ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-notice { border-color: var( --dev3si-border-strong ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-input:hover { border-color: #75746e; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-input::placeholder { color: #8f8e88; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-input { background: #141413; color: var( --dev3si-text ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-skeleton { background: linear-gradient( 90deg, #262624 25%, #2f2f2c 50%, #262624 75% ); background-size: 200% 100%; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-notice__close:hover { background: rgba( 255, 255, 255, .08 ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-draft .dev3si-ui-tabs.is-pills .dev3si-ui-tabs__list { background: rgba( 0, 0, 0, .3 ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-diff ins { background: #10331f; color: #b7f5cf; box-shadow: none; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-diff del { background: #3a1616; color: #fecaca; }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-overlay { background: rgba( 0, 0, 0, .6 ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-ui-shell__header, body.dev3si-theme-dark .dev3si-root .dev3si-ui-card, body.dev3si-theme-dark .dev3si-root .dev3si-ui-dialog { color: var( --dev3si-text ); }
+
+/* ---------- Layout helpers ---------- */
+.dev3si-root .dev3si-muted { color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-mt { margin-top: 16px; }
+.dev3si-root .dev3si-h4 { margin: 4px 0 0; font-size: 14px; font-weight: 600; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-align-end { align-self: flex-end; }
+.dev3si-root .dev3si-dl { display: grid; grid-template-columns: max-content minmax( 0, 1fr ); gap: 6px 16px; margin: 0; font-size: 13px; }
+.dev3si-root .dev3si-dl dt { color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-dl dd { margin: 0; min-width: 0; overflow-wrap: anywhere; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-filterbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+.dev3si-root .dev3si-filterbar > * { min-width: 220px; max-width: 320px; flex: 0 1 280px; }
+.dev3si-root .dev3si-refetch { opacity: .6; transition: opacity .15s; }
+.dev3si-root .dev3si-fieldset { border: 1px solid var( --dev3si-border ); border-radius: var( --dev3si-radius ); padding: 12px 16px; margin: 0; min-width: 0; }
+.dev3si-root .dev3si-fieldset legend { padding: 0 4px; font-weight: 600; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-checklist { display: grid; grid-template-columns: repeat( auto-fill, minmax( 240px, 1fr ) ); gap: 8px 16px; }
+.dev3si-root .dev3si-preview { width: 100%; height: min( 70vh, 720px ); border: 1px solid var( --dev3si-border ); border-radius: var( --dev3si-radius ); background: #f4f5f7; }
+
+/* ---------- Ask ---------- */
+.dev3si-root .dev3si-ask__label { display: block; font-weight: 600; font-size: 15px; margin: 0 0 8px; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-ask__row { display: flex; gap: 12px; align-items: stretch; }
+.dev3si-root .dev3si-ask__row .dev3si-ask__input { flex: 1 1 auto; min-height: 56px; font-size: 16px; line-height: 1.4; padding: 12px 14px; resize: vertical; }
+.dev3si-root .dev3si-ask__row .dev3si-ui-btn { flex: none; align-self: stretch; min-height: 56px; padding-inline: 20px; }
+.dev3si-root .dev3si-ask__meta { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: flex-end; margin-top: 12px; }
+.dev3si-root .dev3si-ask__meta > :first-child { flex: 0 1 340px; min-width: 0; }
+.dev3si-root .dev3si-ask__hint { margin: 0 0 10px; font-size: 12px; color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-suggestions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.dev3si-root .dev3si-suggest {
+	appearance: none; border: 1px solid var( --dev3si-border-strong ); background: var( --dev3si-surface ); color: var( --dev3si-text );
+	border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; line-height: 1.3; cursor: pointer; text-align: left; min-height: 32px;
+}
+.dev3si-root .dev3si-suggest:hover:not( :disabled ) { border-color: var( --dev3si-brand ); color: var( --dev3si-brand-ink ); background: var( --dev3si-brand-soft ); }
+.dev3si-root .dev3si-suggest:focus-visible { outline: none; box-shadow: var( --dev3si-focus ); }
+.dev3si-root .dev3si-suggest:disabled { opacity: .6; cursor: default; }
+.dev3si-root .dev3si-history { list-style: none; margin: 0; padding: 0; }
+.dev3si-root .dev3si-history li { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; padding: 8px 0; border-top: 1px solid var( --dev3si-border ); }
+.dev3si-root .dev3si-history li:first-child { border-top: 0; padding-top: 0; }
+.dev3si-root .dev3si-history__q { appearance: none; border: 0; background: none; padding: 0; font: inherit; font-weight: 600; color: var( --dev3si-brand ); cursor: pointer; text-align: left; }
+.dev3si-root .dev3si-history__q:hover { text-decoration: underline; }
+.dev3si-root .dev3si-history__q:focus-visible { outline: none; box-shadow: var( --dev3si-focus ); border-radius: 2px; }
+.dev3si-root .dev3si-history__d { font-size: 12px; color: var( --dev3si-text-subtle ); }
+@media ( max-width: 600px ) {
+	.dev3si-root .dev3si-ask__row { flex-direction: column; }
+	.dev3si-root .dev3si-ask__row .dev3si-ui-btn { min-height: 44px; }
+	.dev3si-root .dev3si-ask__hint { display: none; }
+}
+
+/* ---------- Answer card ---------- */
+.dev3si-root .dev3si-answer.is-loading .dev3si-answer__body { opacity: .6; transition: opacity .15s; }
+.dev3si-root .dev3si-answer__body { min-width: 0; }
+.dev3si-root .dev3si-answer__total { margin: 8px 0 0; font-size: 13px; color: var( --dev3si-text-muted ); }
+.dev3si-root .dev3si-interp { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 16px; font-size: 12px; }
+.dev3si-root .dev3si-interp__lead { color: var( --dev3si-text-subtle ); font-weight: 600; }
+.dev3si-root .dev3si-chip { display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 999px; background: var( --dev3si-surface-3 ); color: var( --dev3si-text ); font-weight: 500; line-height: 20px; max-width: 100%; overflow-wrap: anywhere; }
+.dev3si-root .dev3si-notes { margin: 12px 0 0; padding: 0; list-style: none; font-size: 12px; color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-notes li { margin: 2px 0; }
+.dev3si-root .dev3si-notes li::before { content: "•"; margin-right: 6px; }
+.dev3si-root .dev3si-seg-toggle { display: inline-flex; border: 1px solid var( --dev3si-border-strong ); border-radius: var( --dev3si-radius-sm ); overflow: hidden; }
+.dev3si-root .dev3si-seg-toggle button { appearance: none; border: 0; background: var( --dev3si-surface ); color: var( --dev3si-text-muted ); font: inherit; font-size: 12px; font-weight: 600; padding: 4px 10px; min-height: 30px; cursor: pointer; }
+.dev3si-root .dev3si-seg-toggle button + button { border-left: 1px solid var( --dev3si-border-strong ); }
+.dev3si-root .dev3si-seg-toggle button[aria-pressed="true"] { background: var( --dev3si-brand-soft ); color: var( --dev3si-brand-ink ); }
+.dev3si-root .dev3si-seg-toggle button:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var( --dev3si-brand ); }
+
+/* Explanation */
+.dev3si-root .dev3si-explain { margin-top: 16px; padding: 14px 16px; border-radius: var( --dev3si-radius ); background: var( --dev3si-surface-2 ); border: 1px solid var( --dev3si-border ); }
+.dev3si-root .dev3si-explain.is-ai { background: var( --dev3si-brand-soft ); border-color: var( --dev3si-brand-line ); }
+.dev3si-root .dev3si-explain__head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.dev3si-root .dev3si-explain__headline { margin: 0 0 4px; font-size: 15px; font-weight: 600; line-height: 1.45; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-explain__summary { margin: 0; color: var( --dev3si-text ); line-height: 1.55; }
+.dev3si-root .dev3si-explain__list { margin: 8px 0 0; padding-left: 18px; color: var( --dev3si-text ); list-style: disc; }
+.dev3si-root .dev3si-explain__list li { margin: 2px 0; }
+.dev3si-root .dev3si-followups { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+.dev3si-root .dev3si-followups__lead { font-size: 12px; font-weight: 600; color: var( --dev3si-text-subtle ); }
+
+/* ---------- Dashboard ---------- */
+.dev3si-root .dev3si-pins { display: grid; grid-template-columns: repeat( 2, minmax( 0, 1fr ) ); gap: 16px; align-items: start; }
+.dev3si-root .dev3si-pins > .dev3si-pin.is-full { grid-column: 1 / -1; }
+.dev3si-root .dev3si-pins .dev3si-ui-card { height: 100%; }
+@container dev3si-shell ( max-width: 900px ) {
+	.dev3si-root .dev3si-pins { grid-template-columns: minmax( 0, 1fr ); }
+}
+@supports not ( container-type: inline-size ) {
+	@media ( max-width: 1100px ) { .dev3si-root .dev3si-pins { grid-template-columns: minmax( 0, 1fr ); } }
+}
+.dev3si-root .dev3si-kpicard.is-loading .dev3si-kpis { opacity: .6; }
+
+/* KPI tiles */
+.dev3si-root .dev3si-kpis { display: grid; grid-template-columns: repeat( auto-fill, minmax( 150px, 1fr ) ); gap: 12px; margin-bottom: 12px; }
+.dev3si-root .dev3si-kpis:last-child { margin-bottom: 0; }
+.dev3si-root .dev3si-kpi { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var( --dev3si-border ); border-radius: var( --dev3si-radius ); background: var( --dev3si-surface ); min-width: 0; }
+.dev3si-root .dev3si-kpi.is-hero { grid-column: span 2; }
+.dev3si-root .dev3si-kpi__label { font-size: 12px; color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-kpi__value { font-size: 22px; font-weight: 600; line-height: 1.25; color: var( --dev3si-text ); overflow-wrap: anywhere; }
+.dev3si-root .dev3si-kpi.is-hero .dev3si-kpi__value { font-size: 28px; }
+.dev3si-root .dev3si-kpi .dev3si-spark { margin-top: 6px; }
+.dev3si-root .dev3si-delta { font-size: 12px; font-weight: 600; white-space: normal; }
+.dev3si-root .dev3si-delta.is-good { color: var( --dev3si-c-good ); }
+.dev3si-root .dev3si-delta.is-bad { color: var( --dev3si-c-bad ); }
+.dev3si-root .dev3si-delta.is-flat { color: var( --dev3si-text-subtle ); }
+.dev3si-root .dev3si-delta__vs { font-weight: 400; color: var( --dev3si-text-subtle ); }
+@media ( max-width: 600px ) {
+	.dev3si-root .dev3si-kpis { grid-template-columns: repeat( 2, minmax( 0, 1fr ) ); gap: 8px; }
+	.dev3si-root .dev3si-kpi { padding: 10px 12px; }
+	.dev3si-root .dev3si-kpi__value { font-size: 18px; }
+	.dev3si-root .dev3si-kpi.is-hero .dev3si-kpi__value { font-size: 24px; }
+}
+
+/* ---------- Charts ---------- */
+.dev3si-root .dev3si-chart { position: relative; width: 100%; min-width: 0; outline: none; border-radius: var( --dev3si-radius-sm ); }
+.dev3si-root .dev3si-chart:focus-visible { box-shadow: var( --dev3si-focus ); }
+.dev3si-root .dev3si-chart svg { display: block; overflow: visible; max-width: 100%; }
+.dev3si-root .dev3si-grid { stroke: var( --dev3si-c-grid ); stroke-width: 1; shape-rendering: crispEdges; }
+.dev3si-root .dev3si-axis { stroke: var( --dev3si-c-axis ); stroke-width: 1; shape-rendering: crispEdges; }
+.dev3si-root .dev3si-tick { fill: var( --dev3si-c-tick ); font-size: 11px; font-variant-numeric: tabular-nums; }
+.dev3si-root .dev3si-line { fill: none; stroke: var( --dev3si-c-1 ); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.dev3si-root .dev3si-line.is-muted { stroke: var( --dev3si-c-muted ); }
+.dev3si-root .dev3si-line.is-spark { stroke-width: 1.5; }
+.dev3si-root .dev3si-area { fill: var( --dev3si-c-1 ); fill-opacity: .1; stroke: none; }
+.dev3si-root .dev3si-dot { fill: var( --dev3si-c-1 ); stroke: var( --dev3si-surface ); stroke-width: 2; }
+.dev3si-root .dev3si-dot.is-muted { fill: var( --dev3si-c-muted ); }
+.dev3si-root .dev3si-cross { stroke: var( --dev3si-c-axis ); stroke-width: 1; }
+.dev3si-root .dev3si-endlabel { fill: var( --dev3si-text ); font-size: 12px; font-weight: 600; paint-order: stroke; stroke: var( --dev3si-surface ); stroke-width: 3px; stroke-linejoin: round; }
+.dev3si-root .dev3si-barlabel { fill: var( --dev3si-text ); font-size: 13px; }
+.dev3si-root .dev3si-barvalue { fill: var( --dev3si-text ); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.dev3si-root .dev3si-bartrack { fill: var( --dev3si-c-track ); }
+.dev3si-root .dev3si-barfill { fill: var( --dev3si-c-1 ); transition: opacity .12s; }
+.dev3si-root .dev3si-bar { outline: none; cursor: default; }
+.dev3si-root .dev3si-bar.is-active .dev3si-barfill { opacity: .8; }
+.dev3si-root .dev3si-bar:focus-visible .dev3si-bartrack { stroke: var( --dev3si-brand ); stroke-width: 2; }
+.dev3si-root .dev3si-seg { transition: opacity .12s; }
+.dev3si-root .dev3si-seg.is-active { opacity: .8; }
+
+/* Tooltip */
+.dev3si-root .dev3si-tip {
+	position: absolute; z-index: 5; pointer-events: none; min-width: 140px; max-width: 220px; padding: 8px 10px;
+	background: var( --dev3si-surface ); color: var( --dev3si-text ); border: 1px solid var( --dev3si-border-strong );
+	border-radius: var( --dev3si-radius-sm ); box-shadow: var( --dev3si-shadow-pop ); font-size: 12px; line-height: 1.4;
+}
+.dev3si-root .dev3si-tip__title { font-weight: 600; margin-bottom: 4px; color: var( --dev3si-text-muted ); overflow-wrap: anywhere; }
+.dev3si-root .dev3si-tip__row { display: flex; align-items: center; gap: 6px; }
+.dev3si-root .dev3si-tip__key { flex: none; width: 10px; height: 10px; border-radius: 2px; }
+.dev3si-root .dev3si-tip__key.is-line { height: 2px; width: 12px; border-radius: 1px; }
+.dev3si-root .dev3si-tip__value { font-size: 13px; font-variant-numeric: tabular-nums; }
+.dev3si-root .dev3si-tip__label { color: var( --dev3si-text-subtle ); overflow-wrap: anywhere; }
+
+/* Legend */
+.dev3si-root .dev3si-legend { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.dev3si-root .dev3si-legend li { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-legend li.is-active { font-weight: 600; }
+.dev3si-root .dev3si-legend.is-inline { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; }
+.dev3si-root .dev3si-legend__swatch { flex: none; width: 12px; height: 12px; border-radius: 3px; }
+.dev3si-root .dev3si-legend__line { flex: none; width: 16px; height: 2px; border-radius: 1px; background: var( --dev3si-c-1 ); }
+.dev3si-root .dev3si-legend__line.is-muted { background: var( --dev3si-c-muted ); }
+.dev3si-root .dev3si-legend__label { flex: 1 1 auto; min-width: 0; }
+.dev3si-root .dev3si-legend.is-inline .dev3si-legend__label { flex: none; }
+.dev3si-root .dev3si-legend__value { font-variant-numeric: tabular-nums; }
+.dev3si-root .dev3si-legend__pct { width: 52px; text-align: right; color: var( --dev3si-text-subtle ); font-variant-numeric: tabular-nums; }
+
+/* Heatmap */
+.dev3si-root .dev3si-heat { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.dev3si-root .dev3si-heat table { border-collapse: separate; border-spacing: 2px; width: 100%; font-size: 12px; font-variant-numeric: tabular-nums; }
+.dev3si-root .dev3si-heat th { font-weight: 600; color: var( --dev3si-text-subtle ); text-align: center; padding: 4px; white-space: nowrap; }
+.dev3si-root .dev3si-heat tbody th { text-align: left; color: var( --dev3si-text ); }
+.dev3si-root .dev3si-heat td { text-align: center; padding: 6px 4px; border-radius: 4px; min-width: 44px; white-space: nowrap; }
+.dev3si-root .dev3si-heat__size { color: var( --dev3si-text-muted ); }
+.dev3si-root .dev3si-heat__na { background: transparent; }
+.dev3si-root .dev3si-heat__cell { color: var( --dev3si-h-ink ); }
+.dev3si-root .dev3si-heat__cell.is-s0 { background: var( --dev3si-h0 ); }
+.dev3si-root .dev3si-heat__cell.is-s1 { background: var( --dev3si-h1 ); }
+.dev3si-root .dev3si-heat__cell.is-s2 { background: var( --dev3si-h2 ); }
+.dev3si-root .dev3si-heat__cell.is-s3 { background: var( --dev3si-h3 ); }
+.dev3si-root .dev3si-heat__cell.is-s4 { background: var( --dev3si-h4 ); }
+.dev3si-root .dev3si-heat__cell.is-s5 { background: var( --dev3si-h5 ); }
+.dev3si-root .dev3si-heat__cell.is-s6 { background: var( --dev3si-h6 ); }
+.dev3si-root .dev3si-heat__cell.is-s7 { background: var( --dev3si-h7 ); }
+.dev3si-root .dev3si-heat__cell.is-s8 { background: var( --dev3si-h8 ); color: var( --dev3si-h-ink-strong ); }
+.dev3si-root .dev3si-heat__cell.is-s9 { background: var( --dev3si-h9 ); color: var( --dev3si-h-ink-strong ); }
+body.dev3si-theme-dark .dev3si-root .dev3si-heat__cell.is-s5, body.dev3si-theme-dark .dev3si-root .dev3si-heat__cell.is-s6, body.dev3si-theme-dark .dev3si-root .dev3si-heat__cell.is-s7 { color: var( --dev3si-h-ink-strong ); }
+
+/* Severity: icon + label, never colour alone */
+.dev3si-root .dev3si-sev { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.dev3si-root .dev3si-sev.is-high { background: var( --dev3si-danger-soft ); color: var( --dev3si-danger ); }
+.dev3si-root .dev3si-sev.is-medium { background: var( --dev3si-warning-soft ); color: var( --dev3si-warning ); }
+.dev3si-root .dev3si-sev.is-low { background: var( --dev3si-info-soft ); color: var( --dev3si-info ); }
+
+@media ( forced-colors: active ) {
+	.dev3si-root .dev3si-line, .dev3si-root .dev3si-barfill, .dev3si-root .dev3si-dot { stroke: CanvasText; fill: CanvasText; }
+	.dev3si-root .dev3si-line { fill: none; }
+	.dev3si-root .dev3si-area { fill: none; }
+	.dev3si-root .dev3si-heat__cell { forced-color-adjust: none; border: 1px solid CanvasText; }
+}
+@media ( prefers-reduced-motion: reduce ) {
+	.dev3si-root .dev3si-barfill, .dev3si-root .dev3si-seg, .dev3si-root .dev3si-refetch { transition: none; }
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Store Insights for WooCommerce: Documentation</title>
+<style>
+:root { --brand: #4f46e5; --text: #1f2328; --muted: #4b5563; --line: #e3e6eb; --soft: #f6f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; }
+header { background: linear-gradient(135deg, #4f46e5, #0891b2); color: #fff; padding: 40px 16px; }
+header .wrap, main { max-width: 980px; margin: 0 auto; }
+header h1 { margin: 0 0 6px; font-size: clamp(24px, 4vw, 34px); }
+header p { margin: 0; opacity: .9; }
+nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; padding: 0 16px; z-index: 2; }
+nav a { display: inline-block; padding: 12px 10px; color: var(--muted); text-decoration: none; font-size: 14px; }
+nav a:hover, nav a:focus { color: var(--brand); }
+main { padding: 8px 16px 64px; }
+h2 { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 24px; }
+h3 { margin-top: 28px; font-size: 18px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; }
+code { background: var(--soft); padding: 2px 6px; border-radius: 4px; }
+pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; }
+pre code { background: none; padding: 0; color: inherit; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; display: block; overflow-x: auto; }
+th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { background: var(--soft); }
+.note { background: #eef2ff; border-left: 4px solid var(--brand); padding: 12px 16px; border-radius: 6px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.shots figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.shots img { width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; }
+.shots figcaption { padding: 8px 12px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+	<h1>DEV3 AI Store Insights for WooCommerce</h1>
+	<p>Version 1.0.0 · Ask your store questions in plain English and get charts, explanations, pinned dashboards, e-mail digests and anomaly alerts.</p>
+</div></header>
+<nav aria-label="Sections">
+	<a href="#install">Install</a><a href="#quick">Quick start</a><a href="#ask">Ask</a><a href="#reports">Reports</a><a href="#explore">Explore</a><a href="#dashboard">Dashboard</a><a href="#digests">Digests</a><a href="#alerts">Alerts</a><a href="#charts">Charts &amp; themes</a><a href="#settings">Settings</a><a href="#gemini">Gemini key</a><a href="#privacy">Privacy</a><a href="#compat">Compatibility</a><a href="#hooks">Hooks</a><a href="#rest">REST API</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a>
+</nav>
+<main>
+
+<div class="shots">
+	<figure><img src="screenshots/1-dashboard-pinned-insights.png" alt="Dashboard with KPI tiles and pinned charts"><figcaption>Dashboard</figcaption></figure>
+	<figure><img src="screenshots/2-ask-your-store.png" alt="Ask your store answer with bar chart and DEV3 AI explanation"><figcaption>Ask your store</figcaption></figure>
+	<figure><img src="screenshots/3-dark-mode.png" alt="Dashboard in dark mode"><figcaption>Dark mode</figcaption></figure>
+	<figure><img src="screenshots/4-anomaly-alert-drilldown.png" alt="Anomaly alert drawer with trend and movers"><figcaption>Anomaly alert</figcaption></figure>
+	<figure><img src="screenshots/5-email-digests.png" alt="E-mail digest schedules"><figcaption>E-mail digests</figcaption></figure>
+	<figure><img src="screenshots/6-mobile-ask.png" alt="Ask screen on a phone"><figcaption>Mobile</figcaption></figure>
+</div>
+
+<h2 id="install">Installation</h2>
+<ol>
+	<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3) and WooCommerce 8.0+.</li>
+	<li>In wp-admin, go to <strong>Plugins › Add New › Upload Plugin</strong>, choose <code>dev3-ai-store-insights-for-woocommerce.zip</code>, then install and activate it.</li>
+	<li>Open <strong>DEV3 AI Insights</strong> in the admin menu.</li>
+</ol>
+<p>No licence key or activation is needed. Updates ship as new zips.</p>
+
+<h2 id="quick">Quick start</h2>
+<ol>
+	<li>Open <strong>Dashboard</strong>. If the data health notice says some orders are missing from WooCommerce Analytics, click <strong>Import them now</strong>.</li>
+	<li>Open <strong>Ask</strong> and click a suggestion, or type a question such as <em>"best sellers in Dubai last month"</em>.</li>
+	<li>Under the answer, click <strong>Save or pin</strong> to add it to the dashboard.</li>
+	<li>In <strong>Digests › New digest</strong>, pick weekly and add your e-mail address. Use <strong>Preview</strong> and <strong>Send test</strong> to check it.</li>
+	<li>In <strong>Alerts › Rules</strong>, keep the default rules or click <strong>Suggest rules with DEV3 AI</strong>. <strong>Check now</strong> scans the last few days.</li>
+</ol>
+
+<h2 id="ask">Ask your store</h2>
+<p>Type a question in plain English. Press Enter to ask, or Shift+Enter for a new line.</p>
+<ul>
+	<li><strong>DEV3 AI mode</strong> uses Gemini function calling. The model receives the list of report functions together with their typed options, plus context: today's date, your timezone and week start, your currency, your categories and the countries and cities that have orders. It replies with a function name and options only. The plugin validates the reply again and drops unknown functions, invalid choices and out-of-range numbers, then runs prepared SQL. <strong>The model never writes SQL.</strong></li>
+	<li><strong>Built-in rules</strong> (no AI) understand periods ("last month", "past 14 days", "in March", "2025", "this quarter"), report words (best sellers, categories, by country/city, new vs returning, top customers, refunds, cohorts/retention, stock, coupons, AOV, daily/weekly/monthly) and "top N". They also recognise the locations and categories in your store. If DEV3 AI fails or is not connected, Ask uses the rules automatically.</li>
+	<li>Each answer shows:
+		<ul>
+			<li>"DEV3 AI read this as…" chips, so you can check how the question was understood</li>
+			<li>a chart, with a Table toggle</li>
+			<li>notes, such as which address is used for locations</li>
+			<li>an explanation and follow-up questions</li>
+			<li>CSV, Edit query (opens it in Explore) and Save or pin</li>
+		</ul>
+	</li>
+	<li>Recent questions are listed under the answer. Click one to ask it again.</li>
+</ul>
+
+<h2 id="reports">Report library</h2>
+<table>
+	<tr><th>Report</th><th>Options</th><th>Chart</th></tr>
+	<tr><td>Store summary</td><td>period, compare, filters</td><td>KPI tiles with deltas and a sparkline</td></tr>
+	<tr><td>Sales trend</td><td>metric (net/gross sales, orders, items, AOV, refunds, customers), interval, period, compare, filters</td><td>Line; the comparison period is drawn in grey</td></tr>
+	<tr><td>Top products / Top categories</td><td>metric (revenue, quantity, orders), rows, period, filters</td><td>Ranked bars</td></tr>
+	<tr><td>Sales by location</td><td>country, region or city; metric; rows; period; filters</td><td>Ranked bars</td></tr>
+	<tr><td>Customer segments</td><td>new vs returning or registered vs guest; metric</td><td>Part-to-whole bar</td></tr>
+	<tr><td>Top customers</td><td>revenue, orders or AOV</td><td>Ranked bars</td></tr>
+	<tr><td>Refunds</td><td>trend or by product</td><td>Line + KPI tiles / bars</td></tr>
+	<tr><td>Customer cohorts</td><td>3–12 months; retention or revenue</td><td>Heatmap</td></tr>
+	<tr><td>Stock status</td><td>low, out, days of cover, overstock; category</td><td>Bars / table</td></tr>
+	<tr><td>Top coupons</td><td>orders or discount given</td><td>Ranked bars</td></tr>
+</table>
+<p>The filters are location (country name or code, state/region/emirate, or city), category (sub-categories included), product (name or SKU), customer type (new/returning) and account type (registered/guest). Periods use your site timezone and week start. Order statuses you exclude under <em>WooCommerce › Settings › Advanced › Analytics</em> are left out of every report. Refunds are counted as negative amounts, just as WooCommerce Analytics counts them.</p>
+
+<h2 id="explore">Explore</h2>
+<p>Explore is a form for building any report by hand: pick the report, then its options. Location and category fields suggest values from your store. Explore works without AI. When a key is set, <strong>Explain with DEV3 AI</strong> adds an AI explanation.</p>
+
+<h2 id="dashboard">Saved questions and dashboard</h2>
+<ul>
+	<li>Saved questions store the report and its options, not the numbers. Each time you open one, it runs again on fresh data. Relative periods such as "last month" move forward with the calendar.</li>
+	<li>Pinned questions appear as cards on the dashboard. Each card can be moved, switched between half and full width, opened in Explore, downloaded as CSV or unpinned.</li>
+	<li>The <strong>Date range</strong> above the cards applies to every card. Choose "Each card's saved period" to keep each card's own range.</li>
+	<li>The WordPress Dashboard widget shows today's numbers against yesterday, a 14-day sparkline and your pins. You can turn it off in Settings.</li>
+</ul>
+
+<h2 id="digests">E-mail digests</h2>
+<ul>
+	<li>Digests run daily (covering yesterday), weekly (last week) or monthly (last month), at the hour you choose in site time.</li>
+	<li>Content: key numbers with changes, any saved questions you pick, and an optional DEV3 AI summary paragraph. Rankings use the digest period; trends keep their saved range.</li>
+	<li>Charts in e-mails are built from inline-styled tables, because most e-mail clients block SVG. Each e-mail also includes a plain-text version.</li>
+	<li>An hourly WP-Cron event sends each digest once per period. For reliable delivery, use an SMTP plugin.</li>
+</ul>
+
+<h2 id="alerts">Anomaly alerts</h2>
+<ul>
+	<li>Once a day, every active rule compares yesterday's value with the average and spread (standard deviation) of the 28 days before it.</li>
+	<li>An alert is raised when all of these are true:
+		<ul>
+			<li>the change is in the direction the rule watches</li>
+			<li>the z-score passes the sensitivity (low 3, medium 2.5, high 2)</li>
+			<li>the change passes the minimum percent</li>
+			<li>the average is at least the minimum baseline</li>
+		</ul>
+	</li>
+	<li>Metrics: net sales, orders, AOV, items sold, refunds and refund rate. A rule can be limited to one location or category.</li>
+	<li>The stock rule flags any of your top-10 sellers that has fewer days of stock left than you set.</li>
+	<li>Each rule raises at most one alert per day. Alerts can e-mail the rule's recipients, or the Settings recipients, or the site admin.</li>
+	<li>The alert drawer shows the 29-day trend, the products and countries that moved most, and an explanation: written by DEV3 AI when a key is set, otherwise by the plugin from the movers.</li>
+	<li><strong>Suggest rules with DEV3 AI</strong> reads 90 days of daily totals and proposes thresholds as a draft. Nothing is saved until you click <em>Add these rules</em>.</li>
+</ul>
+
+<h2 id="charts">Charts, themes and accessibility</h2>
+<ul>
+	<li>All charts are SVG and resize to the width of their card. They use 2px lines, bars no thicker than 24px with rounded ends, light grid lines, and a single value label at the end of each line.</li>
+	<li>Hover, or focus and use the arrow keys, to read the value at any point. Every chart also has a Table view.</li>
+	<li>Colours come from a colour-blind-safe palette, chosen separately for light and dark mode. Changes always show an arrow, a sign and a "better/worse" label, so colour is never the only signal.</li>
+	<li>Settings › Theme: <em>Match my device</em>, <em>Light</em> or <em>Dark</em>.</li>
+</ul>
+
+<h2 id="settings">Settings</h2>
+<table>
+	<tr><th>Setting</th><th>What it does</th></tr>
+	<tr><td>Theme</td><td>Auto, light or dark</td></tr>
+	<tr><td>Default dashboard period</td><td>The period the KPI row uses</td></tr>
+	<tr><td>Answer questions with</td><td>DEV3 AI (falls back to rules) or rules only</td></tr>
+	<tr><td>Locations come from</td><td>The billing or shipping address</td></tr>
+	<tr><td>Explain every answer with DEV3 AI</td><td>Off: the plugin writes the summaries (no tokens)</td></tr>
+	<tr><td>Send customer names to Google Gemini</td><td>Off by default (names are anonymised)</td></tr>
+	<tr><td>Keep question history for</td><td>7–730 days</td></tr>
+	<tr><td>Alerts / recipients</td><td>Turns daily checks on or off; sets the default recipients</td></tr>
+	<tr><td>Data health</td><td>Counts orders missing from Analytics and imports them in the background</td></tr>
+	<tr><td>Uninstall</td><td>Deletes the plugin's tables and options when the plugin is deleted</td></tr>
+</table>
+
+<h2 id="gemini">Google Gemini API key</h2>
+<ol>
+	<li>Go to <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a> and click <strong>Create API key</strong>.</li>
+	<li>Paste the key in <strong>DEV3 AI Insights › API Config</strong> and save. The key is stored encrypted (AES-256-GCM) and is never sent to the browser. You can also define <code>DEV3SI_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+	<li>Optional: choose the models (default <code>gemini-2.5-flash</code>), set a monthly budget cap and use the AI on/off switch. Usage Logs show the tokens used and the estimated cost.</li>
+</ol>
+
+<h2 id="privacy">Privacy</h2>
+<p>When DEV3 AI is enabled, Google Gemini receives:</p>
+<ul>
+	<li>your question</li>
+	<li>aggregated report rows (at most 15 per report)</li>
+	<li>names of categories and locations</li>
+</ul>
+<p>E-mail addresses are never sent, and customer names are anonymised unless you allow them. The plugin adds a suggested paragraph to your privacy policy, plus a personal-data exporter and eraser for each user's question history.</p>
+
+<h2 id="compat">Compatibility</h2>
+<ul>
+	<li><strong>HPOS:</strong> reports read the WooCommerce Analytics lookup tables, which WooCommerce fills for both order storages. Order addresses come from <code>wc_order_addresses</code> when HPOS is active and from post meta otherwise. Both are covered by automated tests.</li>
+	<li><strong>Cart & Checkout blocks:</strong> the plugin does not touch checkout, so they are not affected.</li>
+	<li><strong>Multi-currency stores:</strong> totals are summed as stored by WooCommerce Analytics.</li>
+	<li>Multisite safe, translation ready (<code>languages/*.pot</code>) and RTL-friendly.</li>
+</ul>
+
+<h2 id="hooks">Hooks</h2>
+<table>
+	<tr><th>Hook</th><th>Type</th><th>Use</th></tr>
+	<tr><td><code>dev3si_query_functions</code></td><td>filter</td><td>Add or remove report functions (label, description, params, run callable)</td></tr>
+	<tr><td><code>dev3si_query_result( $result, $fn, $args )</code></td><td>filter</td><td>Change any result</td></tr>
+	<tr><td><code>dev3si_excluded_statuses( $statuses )</code></td><td>filter</td><td>Order statuses left out of reports</td></tr>
+	<tr><td><code>dev3si_ask_context( $ctx )</code></td><td>filter</td><td>Store context given to the planner</td></tr>
+	<tr><td><code>dev3si_ai_result_payload( $payload, $results )</code></td><td>filter</td><td>Data sent to the model for explanations</td></tr>
+	<tr><td><code>dev3si_digest_email( $email, $digest )</code></td><td>filter</td><td>Subject, HTML and text of a digest</td></tr>
+	<tr><td><code>dev3si_alert_threshold( $z, $rule )</code></td><td>filter</td><td>z-score needed to raise an alert</td></tr>
+	<tr><td><code>dev3si_alert_recipients( $emails, $alert )</code></td><td>filter</td><td>Alert e-mail recipients</td></tr>
+	<tr><td><code>dev3si_question_asked( $question, $plan, $results )</code></td><td>action</td><td>After a question is answered</td></tr>
+	<tr><td><code>dev3si_alert_created( $alert, $rule )</code></td><td>action</td><td>After an alert is stored</td></tr>
+	<tr><td><code>dev3si_digest_sent( $digest, $recipients )</code></td><td>action</td><td>After a digest is sent</td></tr>
+</table>
+
+<h2 id="rest">REST API</h2>
+<p>Namespace <code>dev3si/v1</code>. Every route requires the <code>manage_options</code> capability and a REST nonce.</p>
+<table>
+	<tr><th>Route</th><th>Purpose</th></tr>
+	<tr><td><code>GET meta</code></td><td>Report catalogue, periods, locations, categories, data health, AI status</td></tr>
+	<tr><td><code>POST ask</code></td><td><code>{question, mode}</code> → plan, results, explanation</td></tr>
+	<tr><td><code>POST run</code> · <code>POST explain</code></td><td>Run one report (<code>{fn, args, over}</code>) / explain it with DEV3 AI</td></tr>
+	<tr><td><code>GET export</code></td><td>CSV of a report</td></tr>
+	<tr><td><code>questions</code>, <code>questions/&lt;id&gt;</code>, <code>questions/reorder</code></td><td>Saved questions, pins and history</td></tr>
+	<tr><td><code>digests</code>, <code>digests/&lt;id&gt;/test</code>, <code>digests/&lt;id&gt;/preview</code></td><td>Digests</td></tr>
+	<tr><td><code>alerts</code>, <code>alerts/&lt;id&gt;</code>, <code>alerts/&lt;id&gt;/explain</code></td><td>Alert log</td></tr>
+	<tr><td><code>alert-rules</code>, <code>alert-rules/check</code>, <code>alert-rules/advice</code></td><td>Rules, scan, DEV3 AI suggestions</td></tr>
+	<tr><td><code>health</code>, <code>health/import</code></td><td>Data health and the Analytics import job</td></tr>
+</table>
+
+<h2 id="faq">FAQ</h2>
+<h3>Can the AI change or leak my data?</h3>
+<p>No. The AI can only choose a read-only report and fill in its options. Every option is checked again on the server, and queries are prepared statements.</p>
+<h3>The numbers differ from the Orders screen.</h3>
+<p>Reports follow WooCommerce Analytics: excluded statuses are left out and refunds are subtracted. If orders are missing, use Settings › Data health › Import missing orders.</p>
+<h3>"Dubai" is both a city and an emirate. Which one is used?</h3>
+<p>Both. A location matches the country name or code, the state or region (WooCommerce state lists), or the city. Orders matching any of them are included.</p>
+<h3>Digests are not arriving.</h3>
+<p>WordPress needs a working mail setup (an SMTP plugin helps) and a working WP-Cron (real site traffic or a server cron job).</p>
+
+<h2 id="changelog">Changelog</h2>
+<p><strong>1.0.0</strong>: Initial release.</p>
+</main>
+</body>
+</html>
